@@ -8,5 +8,7 @@ namespace EFcoreRelationships.Data
         {
 
         }
+
+        public DbSet<User> Users { get; set; }
     }
 }
