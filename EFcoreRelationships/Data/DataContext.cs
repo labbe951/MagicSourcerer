@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EFcoreRelationships.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace EFcoreRelationships.Data
 {
@@ -10,5 +11,7 @@ namespace EFcoreRelationships.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<BandMember> BandMembers { get; set; }
+        public DbSet<Band> Bands { get; set; }
     }
 }
